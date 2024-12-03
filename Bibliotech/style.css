@@ -1,0 +1,201 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d171d37b;
+    color: #000000;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #000000;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #6d426e47;
+    border: 1px solid #000000;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ajusta elementos si son demasiados */
+}
+
+li p {
+    flex: 1;
+    margin: 0;
+}
+
+a.boton-prestar,
+a.boton-devolver {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 0.5rem; /* Espaciado para móviles */
+}
+
+a.boton-prestar {
+    background-color: #000000;
+}
+
+a.boton-devolver {
+    background-color: #ff0019;
+}
+
+a.boton-prestar:hover,
+a.boton-devolver:hover {
+    opacity: 0.8;
+}
+
+.mensaje {
+    background-color: #ffffff98;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+form {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* Espaciado entre los elementos */
+    justify-content: center; /* Centrar el formulario */
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100%; /* Ajusta al ancho disponible */
+    max-width: 400px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e3236;
+}
+
+p {
+    background-color: #ffffff98;
+    border: 1px solid #000000;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+ul li p {
+    margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea al inicio */
+    }
+
+    a.boton-prestar,
+    a.boton-devolver {
+        width: 100%; /* Botones a ancho completo */
+        text-align: center; /* Centra el texto dentro del botón */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    form {
+        gap: 0.25rem; /* Reduce el espacio entre elementos */
+    }
+
+    input[type="text"] {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    li {
+        padding: 0.8rem;
+    }
+
+    a.boton-prestar,
+    a.boton-devolver {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+}
