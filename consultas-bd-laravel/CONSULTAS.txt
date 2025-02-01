@@ -1,0 +1,11 @@
+Para poder probar cada ruta
+http://127.0.0.1:8000/insertar-datos
+http://127.0.0.1:8000/pedidos-usuario/2
+http://127.0.0.1:8000/pedidos-con-usuarios
+http://127.0.0.1:8000/pedidos-en-rango
+http://127.0.0.1:8000/usuarios-con-r
+http://127.0.0.1:8000/total-pedidos-usuario/5
+http://127.0.0.1:8000/pedidos-ordenados
+http://127.0.0.1:8000/suma-total-pedidos
+http://127.0.0.1:8000/pedido-mas-barato
+http://127.0.0.1:8000/pedidos-agrupados
